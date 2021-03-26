@@ -1,0 +1,50 @@
+AzureSQL> create database Unemployment_Stats;
+set names 'utf8mb4';
+
+create table States(
+Serial_No int Primary Key,
+State varchar(20) NOT NULL,
+Capital varchar(20) NOT NULL, 
+Number_Of_Unemployed_Persons int(20) NOT NULL
+);
+
+Insert Into States (Serial_No, State, Capital, Number_Of_Unemployed_Persons) Values
+(1, 'Abia', 'Umuahia', 570609),
+(2, 'Adamawa', 'Yola', 523719),
+(3, 'Akwa-Ibom', 'Uyo', 1144399),
+(4, 'Anambra', 'Awka', 296325),
+(5, 'Bauchi', 'Bauchi', 555407),
+(6, 'Bayelsa', 'Yenagoa', 287671),
+(7, 'Benue', 'Makurdi', 617938),
+(8, 'Borno', 'Maiduguri', 224583),
+(9, 'CrossRiver', 'Calabar', 618484),
+(10, 'Delta', 'Asaba', 1005848),
+(11, 'Ebonyi', 'Abakaliki', 194868),
+(12, 'Edo', 'BeninCity', 376734),
+(13, 'Ekiti', 'AdoEkiti', 188386),
+(14, 'Enugu', 'Enugu', 585568),
+(15, 'Gombe', 'Gombe', 442478),
+(16, 'Imo', 'Owerri', 1209882),
+(17, 'Jigawa', 'Dutse', 442495),
+(18, 'Kaduna', 'Kaduna', 1339952),
+(19, 'Kano', 'Kano', 1424686),
+(20, 'Katsina', 'Katsina', 650682),
+(21, 'Kebbi', 'BirninKebbi', 245697),
+(22, 'Kogi', 'Lokoja', 677097),
+(23, 'Kwara', 'Ilorin', 186163),
+(24, 'Lagos', 'Ikeja', 1329490),
+(25, 'Nasarawa', 'Lafia', 165232),
+(26, 'Niger', 'Minna', 707559),
+(27, 'Ogun', 'Abeokuta', 362720),
+(28, 'Ondo', 'Akure', 440389),
+(29, 'Osun', 'Oshogbo', 295590),
+(30, 'Oyo', 'Ibadan', 521216),
+(31, 'Plateau', 'Jos', 645166),
+(32, 'Rivers', 'PortHarcourt', 1714189),
+(33, 'Sokoto', 'Sokoto', 216339),
+(34, 'Taraba', 'Jalingo', 532520),
+(35, 'Yobe', 'Damaturu', 298563),
+(36, 'Zamfara', 'Gusau', 209978),
+(37, 'FederalCapitalTerritory', 'Abuja', 515996);
+
+Select * From States;
